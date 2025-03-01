@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Bootstrap'e Başlarken</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="bootstrap-5.3.3/css/bootstrap.min.css" rel="stylesheet">
+        <link href="fontawesome-6.7.2/css/all.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container mt-3">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ilkmodal">
+                Tıkla Ve Gör
+            </button>
+            <div class="modal fade" id="ilkmodal">
+                <div class="modal-dialog modal-fullscreen">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Onay Gerekiyor</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            İçerik
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Kapat</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="bootstrap-5.3.3/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

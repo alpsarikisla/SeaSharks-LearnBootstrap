@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Bootstrap'e Başlarken</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="bootstrap-5.3.3/css/bootstrap.min.css" rel="stylesheet">
+        <link href="fontawesome-6.7.2/css/all.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container mt-3">
+            <h2>Basitçe Collapse Nedir?</h2>
+            <a href="#paragrafim" class="btn btn-warning" data-bs-toggle="collapse"> Aç / Kapat </a>
+            <div id="paragrafim" class="collapse show">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium distinctio in provident, sit earum nesciunt voluptas nulla fugiat quod ea repudiandae totam quos beatae aliquam quas ullam? Culpa, architecto nesciunt ipsum atque eos earum odit sapiente necessitatibus, placeat a assumenda numquam laudantium quae dicta consequuntur, provident cumque iure et dignissimos.
+            </div>
+        </div>
+        <div class="container mt-2">
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header">
+                        <a href="#icerikbir" class="btn" data-bs-toggle="collapse">Akordiyon içeriği 1</a>
+                    </div>
+                    <div id="icerikbir" class="collapse show" data-bs-parent="#accordion">
+                        <div class="card-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quo, voluptates eum necessitatibus, commodi accusantium adipisci ad dignissimos voluptas tenetur ipsum eius praesentium iste vitae? Cupiditate optio quia quo, tenetur dicta dolore eum sint sapiente quisquam ad eligendi illum vero non culpa officiis enim repellendus velit, blanditiis molestiae rem corrupti reiciendis hic. Sint maiores adipisci hic perferendis animi quas excepturi!
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a href="#icerikiki" class="btn" data-bs-toggle="collapse">Akordiyon içeriği 2</a>
+                    </div>
+                    <div id="icerikiki" class="collapse" data-bs-parent="#accordion">
+                        <div class="card-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quo, voluptates eum necessitatibus, commodi accusantium adipisci ad dignissimos voluptas tenetur ipsum eius praesentium iste vitae? Cupiditate optio quia quo, tenetur dicta dolore eum sint sapiente quisquam ad eligendi illum vero non culpa officiis enim repellendus velit, blanditiis molestiae rem corrupti reiciendis hic. Sint maiores adipisci hic perferendis animi quas excepturi!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="bootstrap-5.3.3/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

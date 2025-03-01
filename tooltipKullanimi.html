@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Bootstrap'e Başlarken</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="bootstrap-5.3.3/css/bootstrap.min.css" rel="stylesheet">
+        <link href="fontawesome-6.7.2/css/all.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container mt-3">
+            <div class="btn-group">
+                <a href="#" class="btn btn-primary" title="Detay" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa fa-eye"></i></a>
+                <a href="#" class="btn btn-warning text-white" title="Düzenle" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa fa-edit"></i></a>
+                <a href="#" class="btn btn-danger" title="Sil" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa fa-trash"></i></a>
+            </div>
+        </div>
+        <script src="bootstrap-5.3.3/js/bootstrap.bundle.min.js"></script>
+        <script>
+            var tetikleyiciListesi = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipListesi = tetikleyiciListesi.map(function(yazilacak){
+                return new bootstrap.Tooltip(yazilacak)
+            })
+        </script>
+    </body>
+</html>
