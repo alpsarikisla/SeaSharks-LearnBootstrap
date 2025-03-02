@@ -1,0 +1,132 @@
+<html>
+    <head>
+        <title>Genişlik Ve Yükseklik</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../bootstrap-5.3.3/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../fontawesome-6.7.2/css/all.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container mt-3">
+                <div class="d-inline p-2 bg-warning text-white">d-inline</div>
+                <div class="d-inline p-2 bg-danger text-white">d-inline d-inline</div>
+        </div>
+        <div class="container mt-3">
+                <label class="d-block p-2 bg-warning text-white">d-block</label>
+                <label class="d-block p-2 bg-danger text-white">d-block</label>
+        </div>
+        <div class="container mt-3">
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td>Her görünümde gizli</td>
+                        <td><code>d.none</code></td>
+                        <td>
+                            <span class="d-none bg-info">d-none</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>sm den itibaren görün </td>
+                        <td><code>d-sm-block</code> / <code>d-sm-inline</code></td>
+                        <td>
+                            <span class="d-none d-sm-block bg-info">d-none d-sm-block</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>md den itibaren görün </td>
+                        <td><code>d-md-block</code> / <code>d-md-inline</code></td>
+                        <td>
+                            <span class="d-none d-md-block bg-info">d-none d-md-block</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>lg den itibaren görün </td>
+                        <td><code>d-lg-block</code> / <code>d-lg-inline</code></td>
+                        <td>
+                            <span class="d-none d-lg-block bg-info">d-none d-lg-block</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>xl den itibaren görün </td>
+                        <td><code>d-xl-block</code> / <code>d-xl-inline</code></td>
+                        <td>
+                            <span class="d-none d-xl-block bg-info">d-none d-xl-block</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>xxl dışında görün </td>
+                        <td><code>d-xxl-none</code></td>
+                        <td>
+                            <span class="d-xxl-none bg-info">d-xxl-none</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="container mt-3">
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td>her görünümde görünür</td>
+                        <td><code>d-block</code></td>
+                        <td><span class="d-block bg-warning text-white">d-block</span></td>
+                    </tr>
+                    <tr>
+                        <td>sm'den itibaren gizli</td>
+                        <td><code>d-sm-none</code></td>
+                        <td><span class="d-block d-sm-none bg-warning text-white">d-block d-sm-none</span></td>
+                    </tr>
+                    <tr>
+                        <td>md'den itibaren gizli</td>
+                        <td><code>d-md-none</code></td>
+                        <td><span class="d-block d-md-none bg-warning text-white">d-block d-md-none</span></td>
+                    </tr>
+                    <tr>
+                        <td>lg'den itibaren gizli</td>
+                        <td><code>d-lg-none</code></td>
+                        <td><span class="d-block d-lg-none bg-warning text-white">d-block d-lg-none</span></td>
+                    </tr>
+                    <tr>
+                        <td>xl'den itibaren gizli</td>
+                        <td><code>d-md-none</code></td>
+                        <td><span class="d-block d-xl-none bg-warning text-white">d-block d-xl-none</span></td>
+                    </tr>
+                    <tr>
+                        <td>xxl'den itibaren gizli</td>
+                        <td><code>d-md-none</code></td>
+                        <td><span class="d-block d-xxl-none bg-warning text-white">d-block d-xxl-none</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="container mt-3">
+            <table class="table">
+                <tbody>
+                   
+                    <tr>
+                        <td>gizli => sm görünür => gizli</td>
+                        <td><code>d-none d-sm-block d-md-none</code></td>
+                        <td><span class="d-none d-sm-block d-md-none bg-warning text-white">d-none d-sm-block d-md-none</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="container mt-3">
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td>ID</td>
+                        <td>İsim</td>
+                        <td>Fiyat</td>
+                        <td class="d-print-none">İndirimli Fiyat</td>
+                    </tr>
+                    <tr class="d-none d-print-block">
+                        <td colspan="4">Yazar Alp Sarıkışla</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <script src="../bootstrap-5.3.3/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

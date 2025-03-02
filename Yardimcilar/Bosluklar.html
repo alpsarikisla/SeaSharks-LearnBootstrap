@@ -1,0 +1,81 @@
+
+<html>
+    <head>
+        <title>Float Kullanımı</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../bootstrap-5.3.3/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../fontawesome-6.7.2/css/all.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container mt-3">
+            <h3>rem ölçü birimi</h3>
+           <p>
+            rem boyutu kök dizinin yazı büyüklüğüne bağlıdır. <br>
+            Örneğin html{font-size:10px;} ise 2rem = 20px olacaktır.
+           </p>
+           <h2>Ölçü birimleri</h2>
+           <ul>
+            <li>0 - margin - padding 0</li>
+            <li>1 - margin - padding 0.25 rem</li>
+            <li>2 - margin - padding 0.50 rem</li>
+            <li>3 - margin - padding 1 rem</li>
+            <li>4 - margin - padding 1.5 rem</li>
+            <li>5 - margin - padding 3 rem</li>
+           </ul>      
+        </div>
+        <div class="container mt-3">
+            <div class="pt-4 bg-info" >Bu div'in padding-top özelliği 1.5 rem</div>
+            <div class="p-5 bg-secondary" >Bu div'in padding  özelliği 3 rem</div>
+            <div class="m-4 pb-4 bg-warning" >Bu div'in margin özelliği 1,5 rem padding-bottom özelliği 1,5 rem</div>
+        </div>
+        <div class="container mt-3">
+            <h3>Tüm yönleri anlamak</h3>
+            <table>
+                <tr>
+                    <td>m-*</td>
+                    <td>Tüm yönlere margin</td>
+                </tr>
+                <tr>
+                    <td>mt-*</td>
+                    <td>margin top</td>
+                </tr>
+                <tr>
+                    <td>mb-*</td>
+                    <td>margin bottom</td>
+                </tr>
+                <tr>
+                    <td>ms-*</td>
+                    <td>margin left</td>
+                </tr>
+                <tr>
+                    <td>me-*</td>
+                    <td>margin right</td>
+                </tr>
+                <tr>
+                    <td>mx-*</td>
+                    <td>margin left & right</td>
+                </tr>
+                <tr>
+                    <td>my-*</td>
+                    <td>margin top & bottom</td>
+                </tr>
+            </table>
+        </div>
+        <div class="container mt-3">
+            <h3>Responsive ile kullanım</h3>
+            <div class="ms-3 bg-info"> Margin Left - 3</div>
+            <div class="ms-sm-5 bg-info"> Margin Left - 5 <code>sm</code> ekran</div>
+            <div class="ms-md-5 bg-info"> Margin Left - 5 <code>md</code> ekran</div>
+            <div class="ms-lg-5 bg-info"> Margin Left - 5 <code>lg</code> ekran</div>
+            <div class="ms-xl-5 bg-info"> Margin Left - 5 <code>xl</code> ekran</div>
+            <div class="ms-xxl-5 bg-info"> Margin Left - 5 <code>xxl</code> ekran</div>
+        </div>
+        <div class="container mt-3">
+            <h3>Responsive ile kullanım</h3>
+            <div class="ms-sm-5 ms-md-0 ms-lg-5 ms-xl-0 ms-xxl-5 bg-info"> Yerinde duramayan div</div>
+        </div>
+        <div style="height: 2000px;"></div>
+        <script src="../bootstrap-5.3.3/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
