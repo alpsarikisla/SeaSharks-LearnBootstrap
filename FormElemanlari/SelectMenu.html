@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title>Bootstrap'e Başlarken</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../bootstrap-5.3.3/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../fontawesome-6.7.2/css/all.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container mt-3">
+            <h2>Tek Seçim</h2>
+            <p>Birden çok eleman arasından sadece birini seçtirme</p>
+            <div class="mt-3 mb-3">
+                <label for="teksecim">Eleman Seçiniz</label>
+                <select class="form-select" id="teksecim" name="teksecim">
+                    <option>Eleman 1</option>
+                    <option>Eleman 2</option>
+                    <option>Eleman 3</option>
+                    <option>Eleman 4</option>
+                    <option>Eleman 5</option>
+                </select>
+            </div>
+            <h2>Birden çok eleman seçim</h2>
+            <p>Birden çok eleman arasından birden çok eleman seçtirme</p>
+            <div class="mt-3 mb-3">
+                <label for="coksecim">Elemanları Seçiniz</label>
+                <select class="form-select" id="coksecim" name="coksecim" multiple>
+                    <option>Eleman 1</option>
+                    <option>Eleman 2</option>
+                    <option>Eleman 3</option>
+                    <option>Eleman 4</option>
+                    <option>Eleman 5</option>
+                </select>
+            </div>
+        </div>
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mt-3 mb-3">
+                        <label for="teksecim">Eleman Seçiniz</label>
+                        <select class="form-select form-select-lg" id="teksecim" name="teksecim">
+                            <option>Eleman 1</option>
+                            <option>Eleman 2</option>
+                            <option>Eleman 3</option>
+                            <option>Eleman 4</option>
+                            <option>Eleman 5</option>
+                        </select>
+                    </div>
+                    <div class="mt-3 mb-3">
+                        <label for="teksecim">Eleman Seçiniz</label>
+                        <select class="form-select" id="teksecim" name="teksecim">
+                            <option>Eleman 1</option>
+                            <option>Eleman 2</option>
+                            <option>Eleman 3</option>
+                            <option>Eleman 4</option>
+                            <option>Eleman 5</option>
+                        </select>
+                    </div>
+                    <div class="mt-3 mb-3">
+                        <label for="teksecim">Eleman Seçiniz</label>
+                        <select class="form-select form-select-sm" id="teksecim" name="teksecim">
+                            <option>Eleman 1</option>
+                            <option>Eleman 2</option>
+                            <option>Eleman 3</option>
+                            <option>Eleman 4</option>
+                            <option>Eleman 5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="sehir" class="form-label">Şehir Giriniz</label>
+                    <input class="form-control" name="sehir" id="sehir" list="sehirler"/>
+                    <datalist id="sehirler">
+                        <option value="Ankara"></option>
+                        <option value="İstanbul"></option>
+                        <option value="Adana"></option>
+                        <option value="Eskişehir"></option>
+                        <option value="İzmir"></option>
+                    </datalist>
+                </div>
+            </div>
+        </div>
+        <script src="../bootstrap-5.3.3/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
